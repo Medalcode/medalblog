@@ -1,28 +1,24 @@
 /** @type {import("pliny/config").PlinyConfig } */
 const siteMetadata = {
   title: 'Next.js Starter Blog',
-  author: 'Tails Azimuth',
+  author: 'Jonatthan Medalla',
   headerTitle: '',
   description: 'A blog created with Next.js and Tailwind.css',
-  language: 'en-us',
+  language: 'es-cl',
   theme: 'system', // system, dark or light
   siteUrl: 'https://tailwind-nextjs-starter-blog.vercel.app',
   siteRepo: 'https://github.com/timlrx/tailwind-nextjs-starter-blog',
   siteLogo: `${process.env.BASE_PATH || ''}/static/images/logo.png`,
   socialBanner: `${process.env.BASE_PATH || ''}/static/images/twitter-card.png`,
   mastodon: 'https://mastodon.social/@mastodonuser',
-  email: 'address@yoursite.com',
+  email: 'jonatthan.medalla@gmail.com',
   github: 'https://github.com/Medalcode',
   x: 'https://x.com/medalcode',
   // twitter: 'https://twitter.com/Twitter',
-  facebook: 'https://facebook.com',
-  youtube: 'https://youtube.com',
   linkedin: 'https://www.linkedin.com/in/medalcode/',
   threads: 'https://www.threads.net/@medalcode',
   instagram: 'https://www.instagram.com/medalcode/?hl=es',
-  medium: 'https://medium.com',
-  bluesky: 'https://bsky.app/',
-  locale: 'en-US',
+  locale: 'es-CL',
   // set to true if you want a navbar fixed to the top
   stickyNav: false,
   analytics: {
