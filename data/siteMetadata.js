@@ -3,14 +3,14 @@ const siteMetadata = {
   title: 'Next.js Starter Blog',
   author: 'Jonatthan Medalla',
   headerTitle: '',
-  description: 'A blog created with Next.js and Tailwind.css',
+  description: 'Un blog creado con Next.js y Tailwind.css',
   language: 'es-cl',
   theme: 'system', // system, dark or light
   siteUrl: 'https://tailwind-nextjs-starter-blog.vercel.app',
   siteRepo: 'https://github.com/timlrx/tailwind-nextjs-starter-blog',
   siteLogo: `${process.env.BASE_PATH || ''}/static/images/logo.png`,
   socialBanner: `${process.env.BASE_PATH || ''}/static/images/twitter-card.png`,
-  mastodon: 'https://mastodon.social/@mastodonuser',
+  //mastodon: 'https://mastodon.social/@mastodonuser',
   email: 'jonatthan.medalla@gmail.com',
   github: 'https://github.com/Medalcode',
   x: 'https://x.com/medalcode',
@@ -20,7 +20,7 @@ const siteMetadata = {
   instagram: 'https://www.instagram.com/medalcode/?hl=es',
   locale: 'es-CL',
   // set to true if you want a navbar fixed to the top
-  stickyNav: false,
+  stickyNav: true,
   analytics: {
     // If you want to use an analytics provider you have to add it to the
     // content security policy in the `next.config.js` file.
@@ -77,7 +77,7 @@ const siteMetadata = {
       // example: https://giscus.app/themes/custom_example.css
       themeURL: '',
       // This corresponds to the `data-lang="en"` in giscus's configurations
-      lang: 'en',
+      lang: 'es-CL',
     },
   },
   search: {

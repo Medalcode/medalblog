@@ -24,7 +24,7 @@ const Header = () => {
                 fontFamily: 'var(--font-space-grotesk), sans-serif',
               }}
             >
-              MEDALCODE.
+              MEDALBLOG.
             </h1>
           </div>
           {typeof siteMetadata.headerTitle === 'string' ? (
