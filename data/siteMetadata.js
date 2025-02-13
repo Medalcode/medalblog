@@ -8,7 +8,7 @@ const siteMetadata = {
   theme: 'system', // system, dark or light
   siteUrl: 'https://medalblog-vo3w.vercel.app/',
   siteRepo: 'https://github.com/Medalcode/medalblog',
-  siteLogo: `${process.env.BASE_PATH || ''}/static/images/logo.png`,
+  siteLogo: `${process.env.BASE_PATH || ''}/static/images/pink_logo.svg`,
   socialBanner: `${process.env.BASE_PATH || ''}/static/images/twitter-card.png`,
   //mastodon: 'https://mastodon.social/@mastodonuser',
   email: 'jonatthan.medalla@gmail.com',
