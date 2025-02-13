@@ -1,13 +1,13 @@
 /** @type {import("pliny/config").PlinyConfig } */
 const siteMetadata = {
-  title: 'Next.js Starter Blog',
+  title: 'Medalblog.',
   author: 'Jonatthan Medalla',
   headerTitle: '',
   description: 'Un blog creado con Next.js y Tailwind.css',
   language: 'es-cl',
   theme: 'system', // system, dark or light
-  siteUrl: 'https://tailwind-nextjs-starter-blog.vercel.app',
-  siteRepo: 'https://github.com/timlrx/tailwind-nextjs-starter-blog',
+  siteUrl: 'https://medalblog-vo3w.vercel.app/',
+  siteRepo: 'https://github.com/Medalcode/medalblog',
   siteLogo: `${process.env.BASE_PATH || ''}/static/images/logo.png`,
   socialBanner: `${process.env.BASE_PATH || ''}/static/images/twitter-card.png`,
   //mastodon: 'https://mastodon.social/@mastodonuser',
