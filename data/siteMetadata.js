@@ -3,7 +3,7 @@ const siteMetadata = {
   title: 'Medalblog.',
   author: 'Jonatthan Medalla',
   headerTitle: '',
-  description: 'Un blog creado con Next.js y Tailwind.css',
+  description: '',
   language: 'es-cl',
   theme: 'system', // system, dark or light
   siteUrl: 'https://medalblog-vo3w.vercel.app/',
