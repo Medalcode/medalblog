@@ -7,12 +7,14 @@ interface Project {
 
 const projectsData: Project[] = [
   {
-    title: 'A Search Engine',
-    description: `What if you could look up any information in the world? Webpages, images, videos
-    and more. Google has many features to help you find exactly what you're looking
-    for.`,
-    imgSrc: '/static/images/google.png',
-    href: 'https://www.google.com',
+    title: 'Tuniforme',
+    description: `A fake store with transbank payment gateway built for the application  development workshop. The system allows 
+    you to manage inventories, add, edit and delete uniforms, and receive alerts for low stock. Users can place orders, track 
+    their status, and view purchase history. The distribution of uniforms is recorded, including  assignments, deliveries and 
+    returns. It has authentication and roles for administrators, employees and users with different permissions. The interface 
+    is intuitive and responsive thanks to Bootstrap, optimized for mobile devices.`,
+    imgSrc: '/static/images/tuniforme_pic.png',
+    href: 'https://tuniforme.onrender.com',
   },
   {
     title: 'The Time Machine',
