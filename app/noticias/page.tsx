@@ -36,7 +36,7 @@ async function getTechNews(): Promise<NewsArticle[]> {
     const response = await fetch(
       `https://newsapi.org/v2/top-headlines?category=technology&language=es&pageSize=12&apiKey=${apiKey}`,
       {
-        cache: 'no-store',
+        next: { revalidate: 3600 },
       }
     )
 
