@@ -1,4 +1,4 @@
-import Image from './Image'
+import NextImage from 'next/image'
 import Link from './Link'
 
 interface NewsArticle {
@@ -52,16 +52,12 @@ export default function NewsCard({ article }: NewsCardProps) {
       {urlToImage && (
         <Link href={url} target="_blank" rel="noopener noreferrer" aria-label={`Leer: ${title}`}>
           <div className="relative h-48 w-full overflow-hidden">
-            <Image
+            <NextImage
               alt={title}
               src={urlToImage}
+              fill
               className="object-cover object-center transition-transform duration-300 group-hover:scale-105"
-              width={544}
-              height={306}
-              onError={(e) => {
-                // Fallback si la imagen no carga
-                e.currentTarget.src = '/static/images/news-placeholder.jpg'
-              }}
+              sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
             />
           </div>
         </Link>

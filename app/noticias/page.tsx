@@ -27,7 +27,7 @@ async function getTechNews(): Promise<NewsArticle[]> {
   try {
     // Usando NewsAPI - Puedes obtener una API key gratuita en https://newsapi.org
     const apiKey = process.env.NEWS_API_KEY
-    
+
     if (!apiKey) {
       console.warn('NEWS_API_KEY no configurada, mostrando noticias de ejemplo')
       return getMockNews()
@@ -140,7 +140,8 @@ export default async function NoticiasPage() {
           </li>
           <li>Obtén tu API key desde el dashboard</li>
           <li>
-            Agrégala a tu archivo <code className="rounded bg-gray-200 px-1 dark:bg-gray-700">.env.local</code>:
+            Agrégala a tu archivo{' '}
+            <code className="rounded bg-gray-200 px-1 dark:bg-gray-700">.env.local</code>:
             <br />
             <code className="mt-1 block rounded bg-gray-200 p-2 dark:bg-gray-700">
               NEWS_API_KEY=tu_api_key_aqui

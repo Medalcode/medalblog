@@ -17,22 +17,28 @@ const ScrollTopAndComment = () => {
   }, [])
 
   const handleScrollTop = () => {
-    window.scrollTo({ top: 0 })
+    window.scrollTo({ top: 0, behavior: 'smooth' })
   }
   const handleScrollToComment = () => {
-    document.getElementById('comment')?.scrollIntoView()
+    document.getElementById('comment')?.scrollIntoView({ behavior: 'smooth' })
   }
   return (
     <div
-      className={`fixed bottom-8 right-8 hidden flex-col gap-3 ${show ? 'md:flex' : 'md:hidden'}`}
+      className={`fixed bottom-8 right-8 z-40 flex flex-col gap-3 transition-all duration-300 ${
+        show ? 'translate-y-0 opacity-100' : 'translate-y-20 opacity-0'
+      }`}
     >
       {siteMetadata.comments?.provider && (
         <button
           aria-label="Scroll To Comment"
           onClick={handleScrollToComment}
-          className="rounded-full bg-gray-200 p-2 text-gray-500 transition-all hover:bg-gray-300 dark:bg-gray-700 dark:text-gray-400 dark:hover:bg-gray-600"
+          className="group rounded-full bg-primary-500 p-3 text-white shadow-lg transition-all hover:scale-110 hover:bg-primary-600 hover:shadow-xl dark:bg-primary-600 dark:hover:bg-primary-500"
         >
-          <svg className="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+          <svg
+            className="h-5 w-5 transition-transform group-hover:scale-110"
+            viewBox="0 0 20 20"
+            fill="currentColor"
+          >
             <path
               fillRule="evenodd"
               d="M18 10c0 3.866-3.582 7-8 7a8.841 8.841 0 01-4.083-.98L2 17l1.338-3.123C2.493 12.767 2 11.434 2 10c0-3.866 3.582-7 8-7s8 3.134 8 7zM7 9H5v2h2V9zm8 0h-2v2h2V9zM9 9h2v2H9V9z"
@@ -44,9 +50,13 @@ const ScrollTopAndComment = () => {
       <button
         aria-label="Scroll To Top"
         onClick={handleScrollTop}
-        className="rounded-full bg-gray-200 p-2 text-gray-500 transition-all hover:bg-gray-300 dark:bg-gray-700 dark:text-gray-400 dark:hover:bg-gray-600"
+        className="group rounded-full bg-primary-500 p-3 text-white shadow-lg transition-all hover:scale-110 hover:bg-primary-600 hover:shadow-xl dark:bg-primary-600 dark:hover:bg-primary-500"
       >
-        <svg className="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+        <svg
+          className="h-5 w-5 transition-transform group-hover:-translate-y-1"
+          viewBox="0 0 20 20"
+          fill="currentColor"
+        >
           <path
             fillRule="evenodd"
             d="M3.293 9.707a1 1 0 010-1.414l6-6a1 1 0 011.414 0l6 6a1 1 0 01-1.414 1.414L11 5.414V17a1 1 0 11-2 0V5.414L4.707 9.707a1 1 0 01-1.414 0z"
