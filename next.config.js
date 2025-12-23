@@ -77,6 +77,22 @@ module.exports = () => {
           protocol: 'https',
           hostname: 'picsum.photos',
         },
+        {
+          protocol: 'https',
+          hostname: '*.newsapi.org',
+        },
+        {
+          protocol: 'https',
+          hostname: '**.com',
+        },
+        {
+          protocol: 'https',
+          hostname: '**.net',
+        },
+        {
+          protocol: 'https',
+          hostname: '**.org',
+        },
       ],
       unoptimized,
     },

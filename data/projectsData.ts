@@ -7,6 +7,14 @@ interface Project {
 
 const projectsData: Project[] = [
   {
+    title: 'Medalblog',
+    description: `Blog personal sobre programación, desarrollo web y tecnología construido con Next.js 15, TypeScript y Tailwind CSS. 
+    Incluye sistema de búsqueda con Kbar, comentarios con Giscus, newsletter, modo oscuro/claro, generación automática de RSS feeds, 
+    sitemap dinámico y MDX para contenido enriquecido. Arquitectura basada en App Router de Next.js con React Server Components.`,
+    imgSrc: '/static/images/medalblog-screenshot.png',
+    href: 'https://github.com/Medalcode/medalblog',
+  },
+  {
     title: 'Tuniforme',
     description: `A fake store with transbank payment gateway built for the application  development workshop. The system allows 
     you to manage inventories, add, edit and delete uniforms, and receive alerts for low stock. Users can place orders, track 
