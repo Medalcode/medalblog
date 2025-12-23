@@ -64,8 +64,8 @@ const ThemeSwitch = () => {
   return (
     <div className="mr-5 flex items-center">
       <Menu as="div" className="relative inline-block text-left">
-        <div className="flex items-center justify-center hover:text-primary-500 dark:hover:text-primary-400">
-          <MenuButton aria-label="Theme switcher">
+        <div className="flex items-center justify-center transition-all hover:scale-110 hover:text-primary-500 dark:hover:text-primary-400">
+          <MenuButton aria-label="Cambiar tema">
             {mounted ? resolvedTheme === 'dark' ? <Moon /> : <Sun /> : <Blank />}
           </MenuButton>
         </div>
@@ -85,12 +85,12 @@ const ThemeSwitch = () => {
                   <MenuItem>
                     {({ focus }) => (
                       <button
-                        className={`${focus ? 'bg-primary-600 text-white' : ''} group flex w-full items-center rounded-md px-2 py-2 text-sm`}
+                        className={`${focus ? 'bg-primary-600 text-white' : ''} group flex w-full items-center rounded-md px-2 py-2 text-sm transition-colors`}
                       >
                         <div className="mr-2">
                           <Sun />
                         </div>
-                        Light
+                        Claro
                       </button>
                     )}
                   </MenuItem>
@@ -101,12 +101,12 @@ const ThemeSwitch = () => {
                       <button
                         className={`${
                           focus ? 'bg-primary-600 text-white' : ''
-                        } group flex w-full items-center rounded-md px-2 py-2 text-sm`}
+                        } group flex w-full items-center rounded-md px-2 py-2 text-sm transition-colors`}
                       >
                         <div className="mr-2">
                           <Moon />
                         </div>
-                        Dark
+                        Oscuro
                       </button>
                     )}
                   </MenuItem>
@@ -117,12 +117,12 @@ const ThemeSwitch = () => {
                       <button
                         className={`${
                           focus ? 'bg-primary-600 text-white' : ''
-                        } group flex w-full items-center rounded-md px-2 py-2 text-sm`}
+                        } group flex w-full items-center rounded-md px-2 py-2 text-sm transition-colors`}
                       >
                         <div className="mr-2">
                           <Monitor />
                         </div>
-                        System
+                        Sistema
                       </button>
                     )}
                   </MenuItem>
