@@ -2,8 +2,8 @@
 const siteMetadata = {
   title: 'Medalblog.',
   author: 'Jonatthan Medalla',
-  headerTitle: '',
-  description: '',
+  headerTitle: 'Medalblog.',
+  description: 'Blog personal sobre programación, desarrollo web, automatización y tecnología. Tutoriales, consejos y experiencias de un Full Stack Developer.',
   language: 'es-cl',
   theme: 'system', // system, dark or light
   siteUrl: 'https://medalblog-vo3w.vercel.app/',
@@ -18,7 +18,7 @@ const siteMetadata = {
   linkedin: 'https://www.linkedin.com/in/medalcode/',
   threads: 'https://www.threads.net/@medalcode',
   instagram: 'https://www.instagram.com/medalcode/?hl=es',
-  locale: 'es-CL',
+  locale: 'es_CL',
   // set to true if you want a navbar fixed to the top
   stickyNav: true,
   analytics: {
