@@ -66,7 +66,7 @@ export default function ShareButton({ title, url, text }: ShareButtonProps) {
         </>
       ) : (
         <>
-          {navigator.share ? (
+          {typeof navigator !== 'undefined' && 'share' in navigator ? (
             <ShareIcon className="h-5 w-5" />
           ) : (
             <ClipboardDocumentIcon className="h-5 w-5" />

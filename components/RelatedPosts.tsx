@@ -1,4 +1,4 @@
-import { slug } from 'github-slugger'
+import { slug as slugify } from 'github-slugger'
 import { allBlogs } from 'contentlayer/generated'
 import Link from './Link'
 import Image from './Image'
@@ -40,7 +40,7 @@ export default function RelatedPosts({
   const postsWithScore = eligiblePosts.map((post) => {
     const postTags = post.tags || []
     const matchingTags = postTags.filter((tag) =>
-      currentTags.some((currentTag) => slug(currentTag) === slug(tag))
+      currentTags.some((currentTag) => slugify(currentTag) === slugify(tag))
     )
 
     return {
@@ -123,7 +123,7 @@ export default function RelatedPosts({
                     {tags.slice(0, 2).map((tag) => (
                       <Link
                         key={tag}
-                        href={`/tags/${slug(tag)}`}
+                        href={`/tags/${slugify(tag)}`}
                         className="rounded-full bg-gray-100 px-2 py-1 text-xs font-medium text-gray-700 transition-colors hover:bg-primary-100 hover:text-primary-700 dark:bg-gray-700 dark:text-gray-300 dark:hover:bg-primary-900 dark:hover:text-primary-300"
                       >
                         {tag}
