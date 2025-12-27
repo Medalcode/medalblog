@@ -1,6 +1,7 @@
 'use client'
 
 import { useState } from 'react'
+import { trackEvent } from '@/app/analytics'
 import { ShareIcon, ClipboardDocumentIcon, CheckIcon } from '@heroicons/react/24/outline'
 
 interface ShareButtonProps {
@@ -37,6 +38,7 @@ export default function ShareButton({ title, url, text }: ShareButtonProps) {
           text: text || title,
           url,
         })
+        trackEvent('share_native', { title, url })
       } catch (error) {
         // User cancelled or error occurred
         console.log('Share cancelled or failed:', error)
@@ -46,6 +48,7 @@ export default function ShareButton({ title, url, text }: ShareButtonProps) {
       try {
         await navigator.clipboard.writeText(url)
         setCopied(true)
+        trackEvent('share_copy_link', { title, url })
         setTimeout(() => setCopied(false), 2000)
       } catch (error) {
         console.error('Failed to copy:', error)
