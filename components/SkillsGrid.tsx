@@ -16,12 +16,13 @@ const skills: Skill[] = [
   // Backend
   { name: 'Node.js', icon: '🟢', category: 'backend' },
   { name: 'Python', icon: '🐍', category: 'backend' },
+  { name: 'Django', icon: '🎸', category: 'backend' },
   { name: 'PostgreSQL', icon: '🐘', category: 'backend' },
-  { name: 'MongoDB', icon: '🍃', category: 'backend' },
 
   // Tools
   { name: 'Git', icon: '📦', category: 'tools' },
   { name: 'Docker', icon: '🐳', category: 'tools' },
+  { name: 'Power Automate', icon: '⚡', category: 'tools' },
   { name: 'VS Code', icon: '💻', category: 'tools' },
   { name: 'Vercel', icon: '▲', category: 'tools' },
 ]

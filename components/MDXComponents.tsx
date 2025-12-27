@@ -6,6 +6,9 @@ import Image from './Image'
 import CustomLink from './Link'
 import TableWrapper from './TableWrapper'
 
+import ExperienceTimeline from './ExperienceTimeline'
+import SkillsGrid from './SkillsGrid'
+
 export const components: MDXComponents = {
   Image,
   TOCInline,
@@ -13,4 +16,6 @@ export const components: MDXComponents = {
   pre: Pre,
   table: TableWrapper,
   BlogNewsletterForm,
+  ExperienceTimeline,
+  SkillsGrid,
 }

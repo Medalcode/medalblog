@@ -9,25 +9,25 @@ interface TimelineItem {
 
 const timelineData: TimelineItem[] = [
   {
-    year: '2024',
-    title: 'Desarrollador Full Stack',
-    company: 'Empresa Actual',
+    year: '2024 - Presente',
+    title: 'Full Stack Developer',
+    company: 'Freelance & Proyectos Personales',
     description:
-      'Desarrollo de aplicaciones web modernas con Next.js, TypeScript y Node.js. Implementación de arquitecturas escalables y mejores prácticas.',
+      'Desarrollo de aplicaciones web escalables con Next.js y React. Creación de este blog y mantenimiento de proyectos open source. Enfoque en performance y SEO.',
   },
   {
-    year: '2023',
-    title: 'Desarrollador Frontend',
-    company: 'Tech Startup',
+    year: '2023 - 2024',
+    title: 'Desarrollador Backend Python',
+    company: 'Tuniforme (Proyecto)',
     description:
-      'Creación de interfaces de usuario interactivas con React y Tailwind CSS. Optimización de rendimiento y experiencia de usuario.',
+      'Lideré el desarrollo del sistema de gestión para Tuniforme usando Django y Python. Integración exitosa con pasarela de pagos Webpay Plus (Transbank) y automatización de procesos.',
   },
   {
-    year: '2022',
-    title: 'Junior Developer',
-    company: 'Agencia Digital',
+    year: '2022 - 2023',
+    title: 'Aprendizaje Intensivo',
+    company: 'Autodidacta',
     description:
-      'Primeros pasos en desarrollo web profesional. Aprendizaje de frameworks modernos y metodologías ágiles.',
+      'Inmersión profunda en ciencias de la computación. Dominio de algoritmos, estructuras de datos y fundamentos de la web. Creación de múltiples proyectos de práctica.',
   },
 ]
 
