@@ -91,6 +91,14 @@ export default () => {
           protocol: 'https',
           hostname: '**.org',
         },
+        {
+          protocol: 'https',
+          hostname: 'media.dev.to',
+        },
+        {
+          protocol: 'https',
+          hostname: 'res.cloudinary.com',
+        },
       ],
       unoptimized,
     },
